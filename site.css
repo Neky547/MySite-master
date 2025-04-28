@@ -1,0 +1,288 @@
+/* Styles généraux */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(245, 146, 190);
+    font-weight: bold;
+    color:rgb(150, 5, 65);
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+header img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.table-container {
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(241, 208, 221);
+    color: rgb(112, 20, 92);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+.navbar a{
+    color: rgb(112, 20, 92);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    position: relative;
+    transition: all 0.3s ease;
+    text-decoration-line: none;
+}
+.navbar a:hover {
+    color: rgb(180, 53, 142); 
+    text-shadow: 0 0 8px rgba(180, 53, 142, 0.4); 
+}
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(180, 53, 142);
+    transition: width 0.3s ease;
+}
+.navbar a:hover::after {
+    width: 100%; /* Animation du soulignement */
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color:rgb(53, 3, 19);
+    line-height: 1.8;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+h2{
+    text-align: center;
+    margin: 30px 0;
+    color: rgb(77, 14, 45);
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 0;
+    padding: 5px;
+}
+.logo-wrapper {
+    width: 110px; 
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 222, 238); 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+/* Contact */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 40px 20px;
+    text-align: center;
+}
+.contact-container h1 {
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #333;
+}
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container label {
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: -10px;
+}
+.contact-container input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.radio-options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.radio-options {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(245, 146, 192);
+    margin-top: auto;
+}
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    background-color: rgb(245, 222, 238);
+    border: none;
+    box-shadow: 0px 8px
+    15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s
+    ease 0s;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #440106;
+}
+button:hover{
+    background-color: rgb(180, 53, 142);
+    box-shadow: 0px 15px 20px
+    rgba(211, 173, 209, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+button:active{
+    transform: translateY(-1px);
+}
+
+/* Projets */
+.projets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    justify-content: center;
+}
+.project{
+    background-color: rgb(245, 222, 238);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: justify;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Parcours */
+.parcours{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.steps{
+        width: 250px;
+        height: 100px;
+        background-color: #4CAF50;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        border-radius: 10px;
+        position: relative;
+        margin-top: 40px;
+}
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #c154a6;
+    position: absolute;
+    top: 70%;
+  }
+.year {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
