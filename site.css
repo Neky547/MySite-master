@@ -14,7 +14,7 @@ header {
     align-items: center;
     padding: 20px;
     text-align: center;
-    background-color: rgb(245, 146, 190);
+    background: url("images/pinkbackground.jpg") no-repeat center center/cover;
     font-weight: bold;
     color:rgb(150, 5, 65);
     position: relative;
@@ -33,10 +33,11 @@ header img {
     border-radius: 50%;
 }
 
+/* Barre de navigation */
 .table-container {
     width: 100%;
     padding: 10px 0;
-    background-color: rgb(241, 208, 221);
+    background-color: rgba(241, 208, 221, 0.4); /* opaque */
     color: rgb(112, 20, 92);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -180,7 +181,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: rgb(245, 146, 192);
+    background: url("images/pinkbackground.jpg") no-repeat center center/cover;
     margin-top: auto;
 }
 
@@ -189,7 +190,7 @@ button {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    background-color: rgb(245, 222, 238);
+    background-color: rgb(248, 185, 229);
     border: none;
     box-shadow: 0px 8px
     15px rgba(0, 0, 0, 0.1);
@@ -213,25 +214,25 @@ button:active{
 }
 
 /* Projets */
-.projets{
+.projects {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;            /* permet le retour à la ligne si écran petit */
+    justify-content: center;    /* centre les blocs horizontalement */
+    gap: 20px;                  /* espace entre les blocs */
     padding: 20px;
-    text-align: center;
-    max-width: 800px;
-    justify-content: center;
+    max-width: 1200px;          /* limite la largeur totale */
+    margin: auto;               /* centre le container dans la page */
 }
-.project{
+
+.project {
     background-color: rgb(245, 222, 238);
     border-radius: 15px;
     padding: 25px;
-    margin: 20px 0;
-    width: 100%;
-    max-width: 700px;
+    margin: 10px;
+    width: 300px;               /* taille fixe (ou mets min/max si tu veux) */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: justify;
+    text-align: center;         /* texte centré dans chaque bloc */
 }
 
 .project:hover {
