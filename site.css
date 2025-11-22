@@ -29,7 +29,7 @@ body {
 
 /* Navigation */
 .custom-navbar {
-    background: rgba(44, 62, 80, 0.95) !important;
+    background: blur(50px)rgba(95, 123, 151, 0.95) !important;
     backdrop-filter: blur(10px);
     padding: 1rem 0;
     transition: all 0.3s ease;
