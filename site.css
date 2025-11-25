@@ -1,10 +1,10 @@
 /* Variables et reset */
 :root {
-    --primary-color: #2c3e50;
+    --primary-color: #e7f1f8;
     --secondary-color: #3498db;
     --accent-color: #9b59b6;
     --text-dark: #2c3e50;
-    --text-light: #7f8c8d;
+    --text-light: #ffffff;
     --bg-light: #f8f9fa;
     --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
@@ -25,7 +25,7 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     overflow-x: hidden;
-    background-color: black;
+    background-color: rgb(11, 2, 100) !important;
 }
 
 /* Navigation */
@@ -351,7 +351,7 @@ body {
 
 /* Footer */
 .footer {
-    background: var(--primary-color);
+    background-color:rgb(1, 0, 8);
     color: white;
     padding: 3rem 0;
     text-align: center;
