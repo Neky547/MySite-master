@@ -486,6 +486,18 @@ body {
     left: -0.8rem;
 }
 
+/* Map Section */
+.map-section {
+    display: flex;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 20px;
+}
+
 /* Contact */
 .contact-form {
     background: white;
@@ -518,6 +530,10 @@ body {
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Pour garder la couleur cohérente */
+#contact .section-header h2 {
+    color: rgb(20, 10, 105);
 }
 
 /* Footer */
