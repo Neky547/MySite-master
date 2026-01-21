@@ -325,7 +325,7 @@ body {
     left: -1.2rem;
 }
 
-/* Timeline */
+/* TIMELINE */
 .timeline {
     position: relative;
     max-width: 1000px;
@@ -383,7 +383,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* Projects */
+/* PROJECTS */
 .project-card {
     background: white;
     padding: 2.5rem;
@@ -434,6 +434,14 @@ body {
     font-size: 1.2rem;
 }
 
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e0e5ff;
+}
 /* VEILLE TECHNOLOGIQUE */
 .veille-subject {
     background: linear-gradient(135deg, #fff8f8 0%, #f8f9ff 100%);
@@ -490,7 +498,7 @@ body {
     left: -0.8rem;
 }
 
-/* Map Section */
+/* MAP SECTION */
 .map-section {
     display: flex;
 }
@@ -502,7 +510,7 @@ body {
     border-radius: 20px;
 }
 
-/* Contact */
+/* CONTACT */
 .contact-form {
     background: white;
     padding: 3rem;
@@ -540,7 +548,7 @@ body {
     color: rgb(20, 10, 105);
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
     background-color: rgb(1, 0, 8);
     color: white;
