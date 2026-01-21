@@ -400,13 +400,15 @@ body {
 }
 
 .project-links {
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project-link {
     display: flex;
     align-items: center;
-    padding: 1rem 1.5rem;
+    justify-content: center; 
+    padding: 1rem;
     background: var(--bg-light);
     border-radius: 10px;
     text-decoration: none;
@@ -414,14 +416,17 @@ body {
     font-weight: 500;
     transition: all 0.3s ease;
     border: 2px solid transparent;
-    min-width: 0;
+    width: 100%; /* Important pour remplir la colonne col-md-4 */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Coupe le texte proprement s'il est trop long */
 }
 
 .project-link:hover {
     background: white;
     border-color: var(--secondary-color);
     color: var(--secondary-color);
-    transform: translateX(10px);
+    transform: translateY(-5px); /* Pour garder l'alignement vertical */
 }
 
 .project-link i {
@@ -429,7 +434,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* Veille Technologique améliorée */
+/* VEILLE TECHNOLOGIQUE */
 .veille-subject {
     background: linear-gradient(135deg, #fff8f8 0%, #f8f9ff 100%);
     border-left: 4px solid var(--secondary-color);
