@@ -555,16 +555,7 @@ body {
     padding: 3rem 0;
     text-align: center;
 }
-
-.btn-outline-light {
-    border: 2px solid white;
-    color: white;
-    padding: 0.6rem 1.5rem;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-}
-
-.btn-outline-light:hover {
+outline-light:hover {
     background: white;
     color: var(--text-dark);
     transform: translateY(-2px);
