@@ -324,7 +324,10 @@ body {
     position: absolute;
     left: -1.2rem;
 }
-
+/* PARCOURS PRO */
+.stage-body i {
+    color: var(--secondary-color);
+}
 /* TIMELINE */
 .timeline {
     position: relative;
