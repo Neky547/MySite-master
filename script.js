@@ -6,10 +6,13 @@ const data = {
     title: "Stage de 1e année - Développeur Web",
     body: `
       <ul>
-        <li>Application de supply chain</li>
-        <li>Technos : HTML, CSS, JS</li>
-        <li>Durée : 6 semaines</li>
+        <li>Participation à la création d'une application de supply chain</li>
+        <li>Technologies utilisées : HTML, CSS, JS, PHP, MySQL, Excel, Bootstrap, Symfony</li>
       </ul>
+      <p>Nous avons appris à collaborer en équipe et à gérer un projet de développement web.
+      Nous avons participé à la création d'une application de supply chain qui sert à créer et gérer les jeux de tests.
+      Dans cette application, nous avons géré la base de données et développé des fonctionnalités pour l'application.
+      </p>
     `
   },
   stageBTS2: {
@@ -17,9 +20,11 @@ const data = {
     body: `
       <ul>
         <li>Application de supply chain avancée</li>
-        <li>Technos : JS, API, Base de données</li>
-        <li>Durée : 6 semaines</li>
+        <li>Technos : PHP, JavaScript, WordPress Elementor</li>
       </ul>
+      <p>Nous avons continué à travailler sur l'application de supply chain, en ajoutant de nouvelles fonctionnalités et en améliorant l'interface utilisateur.
+      Nous avons également travaillé sur un projet de développement web pour un client, en utilisant WordPress et Elementor pour créer un site web personnalisé.
+      </p>
     `
   }
 };
