@@ -2,8 +2,8 @@
 
 const profileCard = document.getElementById("profile-card");
 const skillsSection = document.getElementById("skills-section");
-const leftTimelineItem = document.getElementById("left-timeline-item");
-const rightTimelineItem = document.getElementById("right-timeline-item");
+const leftItems = document.querySelectorAll('.left-timeline-item');
+const rightItems = document.querySelectorAll('.right-timeline-item');
 
 //Photo de profil
 profileCard.animate(
@@ -16,14 +16,20 @@ skillsSection.animate(
   { duration: 1000 },
 );
 //Parcours scolaire
-leftTimelineItem.animate(
-  [{ transform: "translateX(-200px)" }, { transform: "translateX(0px)" }],
-  { duration: 5000},
-);
-rightTimelineItem.animate(
-  [{ transform: "translateX(200px)" }, { transform: "translateX(0px)" }],
-  { duration: 5000 },
-);
+// Anime chaque élément individuellement
+leftItems.forEach(item => {
+  item.animate(
+    [{ transform: "translateX(-200px)" }, { transform: "translateX(0px)" }],
+    { duration: 5000, fill: 'forwards' }
+  );
+});
+
+rightItems.forEach(item => {
+  item.animate(
+    [{ transform: "translateX(200px)" }, { transform: "translateX(0px)" }],
+    { duration: 5000, fill: 'forwards' }
+  );
+});
 
 //PARCOURS PRO - AFFICHAGE DES DETAILS DES STAGES
 const modal = new bootstrap.Modal(document.getElementById("stageModal"));
