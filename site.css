@@ -1,12 +1,12 @@
 /* Variables et reset */
 :root {
     --primary-color: #e7f1f8;
-    --secondary-color: #3498db;
+    --secondary-color: #0b1a5f;
     --accent-color: #9b59b6;
     --text-dark: #2c3e50;
     --text-light: #ffffff;
     --bg-light: #f8f9fa;
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-primary: linear-gradient(135deg, #061866 0%, #3951bb 100%);
     --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
 
@@ -25,7 +25,9 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     overflow-x: hidden;
-    background-color: rgb(20, 10, 105) !important;
+    /*background-color: rgb(20, 10, 105) !important;*/
+    background: url("images/background.png") no-repeat center center fixed;
+    background-size: cover;
 }
 
 /* Navigation */
@@ -86,7 +88,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: var(--gradient-primary);
+    background: transparent;
     color: white;
     min-height: 100vh;
     display: flex;
@@ -102,7 +104,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("images/background.png") no-repeat center center/cover;
+    display: none;
     opacity: 0.5;
 }
 
@@ -200,7 +202,7 @@ body {
     text-align: center;
 }
 
-/* Section BTS SIO - Styles adaptés */
+/* Section BTS SIO */
 .veille-content {
     background: white;
     padding: 3rem;
@@ -341,8 +343,8 @@ body {
     left: 50%;
     top: 0;
     bottom: 0;
-    width: 2px;
-    background: var(--secondary-color);
+    width: 3px;
+    background: white;
     transform: translateX(-50%);
 }
 
