@@ -208,9 +208,15 @@ body {
 
 
 /* Section CV */
+.cv-section h2 {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+}
+
 img[alt="CV"] {
     transition: transform 0.3s ease;
 }
+
 img[alt="CV"]:hover {
     transform: scale(1.02);
 }
@@ -339,10 +345,12 @@ img[alt="CV"]:hover {
     position: absolute;
     left: -1.2rem;
 }
+
 /* PARCOURS PRO */
 .stage-body i {
     color: var(--secondary-color);
 }
+
 /* TIMELINE */
 .timeline {
     position: relative;
@@ -425,7 +433,7 @@ img[alt="CV"]:hover {
 .project-link {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     padding: 1rem;
     background: var(--bg-light);
     border-radius: 10px;
@@ -434,17 +442,21 @@ img[alt="CV"]:hover {
     font-weight: 500;
     transition: all 0.3s ease;
     border: 2px solid transparent;
-    width: 100%; /* Important pour remplir la colonne col-md-4 */
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    width: 100%;
+    /* Important pour remplir la colonne col-md-4 */
+    white-space: nowrap;
+    /* Empêche le texte de passer à la ligne */
     overflow: hidden;
-    text-overflow: ellipsis; /* Coupe le texte proprement s'il est trop long */
+    text-overflow: ellipsis;
+    /* Coupe le texte proprement s'il est trop long */
 }
 
 .project-link:hover {
     background: white;
     border-color: var(--secondary-color);
     color: var(--secondary-color);
-    transform: translateY(-5px); /* Pour garder l'alignement vertical */
+    transform: translateY(-5px);
+    /* Pour garder l'alignement vertical */
 }
 
 .project-link i {
@@ -460,6 +472,7 @@ img[alt="CV"]:hover {
     margin-bottom: 1.5rem;
     border: 1px solid #e0e5ff;
 }
+
 /* VEILLE TECHNOLOGIQUE */
 .veille-subject {
     background: linear-gradient(135deg, #fff8f8 0%, #f8f9ff 100%);
@@ -561,6 +574,7 @@ img[alt="CV"]:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 /* Pour garder la couleur cohérente */
 #contact .section-header h2 {
     color: rgb(20, 10, 105);
@@ -573,6 +587,7 @@ img[alt="CV"]:hover {
     padding: 3rem 0;
     text-align: center;
 }
+
 outline-light:hover {
     background: white;
     color: var(--text-dark);
@@ -596,54 +611,54 @@ outline-light:hover {
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .profile-img {
         width: 200px;
         height: 200px;
         margin-bottom: 2rem;
     }
-    
+
     .timeline::before {
         left: 30px;
     }
-    
+
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
         padding: 0 0 0 4rem;
     }
-    
+
     .timeline-year {
         left: -10px;
     }
-    
+
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         gap: 1rem;
     }
-    
+
     .skill-logo {
         width: 40px;
         height: 40px;
     }
-    
+
     .section-padding {
         padding: 60px 0;
     }
-    
+
     .project-card,
     .veille-content,
     .contact-form {
         padding: 2rem;
     }
-    
+
     .specialite-card {
         margin-bottom: 2rem;
     }
-    
+
     .specialite-header {
         padding: 1.5rem;
     }
-    
+
     .specialite-body {
         padding: 1.5rem;
     }
@@ -655,6 +670,7 @@ outline-light:hover {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
