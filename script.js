@@ -46,6 +46,9 @@ const data = {
       Nous avons participé à la création d'une application de supply chain qui sert à créer et gérer les jeux de tests.
       Dans cette application, nous avons géré la base de données et développé des fonctionnalités pour l'application.
       </p>
+      <table>
+        
+      </table>
     `,
   },
   stageBTS2: {
