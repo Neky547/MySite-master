@@ -44,11 +44,11 @@ body {
 
 .custom-navbar .navbar-brand {
     font-size: 1.5rem;
-    color: white !important;
+    color: rgb(110, 155, 197) !important;
 }
 
 .custom-navbar .nav-link {
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: rgb(110, 155, 197) !important;
     font-weight: 500;
     margin: 0 0.5rem;
     transition: all 0.3s ease;
