@@ -313,3 +313,72 @@ document.querySelectorAll("button[id^='stage']").forEach((btn) => {
     modal.show();
   });
 });
+
+// FLUX RSS — CERT-FR via proxy CORS
+async function loadRSSFeed() {
+  const feedUrl = "https://www.cert.ssi.gouv.fr/feed/";
+  const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(feedUrl)}`;
+  const container = document.getElementById("rss-feed");
+
+  try {
+    const res = await fetch(proxyUrl);
+    const text = await res.text();
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(text, "text/xml");
+    const items = Array.from(xml.querySelectorAll("item")).slice(0, 6);
+
+    if (items.length === 0) {
+      container.innerHTML = `<p class="text-muted">Aucun article disponible pour le moment.</p>`;
+      return;
+    }
+
+    const cards = items.map(item => {
+      const title = item.querySelector("title")?.textContent || "Sans titre";
+      const link  = item.querySelector("link")?.textContent || "#";
+      const pubDate = item.querySelector("pubDate")?.textContent || "";
+
+      const date = pubDate ? new Date(pubDate).toLocaleDateString("fr-FR", {
+        day: "numeric", month: "long", year: "numeric"
+      }) : "";
+
+      let badgeColor = "#0b1a5f";
+      let badgeLabel = "Info";
+      const titre = title.toLowerCase();
+      if (titre.includes("vulnérabilité") || titre.includes("critique")) {
+        badgeColor = "#c0392b"; badgeLabel = "Vulnérabilité";
+      } else if (titre.includes("alerte")) {
+        badgeColor = "#e67e22"; badgeLabel = "Alerte";
+      } else if (titre.includes("avis")) {
+        badgeColor = "#2980b9"; badgeLabel = "Avis";
+      }
+
+      return `
+        <div class="col-md-6 col-lg-4">
+          <a href="${link}" target="_blank" class="text-decoration-none">
+            <div class="rss-card h-100">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="badge" style="background:${badgeColor}; font-size:0.72rem;">${badgeLabel}</span>
+                <span class="rss-date">${date}</span>
+              </div>
+              <p class="rss-title">${title}</p>
+              <span class="rss-link">Lire l'article <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+      `;
+    }).join("");
+
+    container.innerHTML = `<div class="row g-3">${cards}</div>`;
+
+  } catch (err) {
+    console.error("Erreur RSS :", err);
+    container.innerHTML = `
+      <p class="text-muted">
+        <i class="bi bi-exclamation-triangle"></i>
+        Impossible de charger les articles. Consultez directement
+        <a href="https://www.cert.ssi.gouv.fr" target="_blank">cert.ssi.gouv.fr</a>.
+      </p>`;
+  }
+}
+
+loadRSSFeed();

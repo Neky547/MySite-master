@@ -605,6 +605,46 @@ img[alt="CV"]:hover {
     left: -0.8rem;
 }
 
+/* FLUX RSS */
+.rss-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.2rem;
+  border: 1px solid #e0e5ff;
+  border-left: 4px solid var(--secondary-color);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rss-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-left-color: var(--accent-color);
+}
+
+.rss-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.rss-date {
+  font-size: 0.75rem;
+  color: #999;
+  white-space: nowrap;
+}
+
+.rss-link {
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
 /* MAP SECTION */
 .map-section {
     display: flex;
