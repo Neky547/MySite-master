@@ -197,6 +197,12 @@ body {
     object-fit: contain;
     margin-bottom: 0.5rem;
     filter: brightness(0) invert(1);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item:hover .skill-logo {
+    filter: none;
+    transform: scale(1.15);
 }
 
 .skill-item span {
