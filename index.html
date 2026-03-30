@@ -581,114 +581,219 @@
   </section>
 
   <!-- SECTION VEILLE -->
-  <!-- SECTION VEILLE -->
-  <section id="veille" class="section-padding">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-12">
+<section id="veille" class="section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
 
-          <div class="section-header text-center mb-5">
-            <h2 class="display-5 fw-bold">Veille Technologique</h2>
-            <p class="lead">Restez informé, restez compétitif</p>
-          </div>
+        <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold">Veille Technologique</h2>
+          <p class="lead">Restez informé, restez compétitif</p>
+        </div>
 
-          <div class="veille-content">
+        <div class="veille-content">
 
-            <!-- SUJET + INTRO -->
-            <div class="veille-subject mb-4">
-              <h3 class="h4 mb-3">
-                Architecture résiliente face aux cyberattaques
-              </h3>
-              <p class="mb-4">
-                Les cyberattaques ont augmenté de <strong>4 %</strong> en France en 2025, avec
-                <strong>67 %</strong> des entreprises touchées et <strong>60 %</strong> qui ferment
-                dans les 18 mois suivant un incident majeur. En tant que future développeuse, je
-                m'intéresse aux architectures capables de résister à ces menaces dès leur conception —
-                c'est le principe du <em>Security by Design</em>.
-              </p>
+          <!-- SUJET + INTRO -->
+          <div class="veille-subject mb-4">
+            <h3 class="h4 mb-3">
+              Sécurité des architectures microservices
+            </h3>
+            <p class="mb-4">
+              Les architectures microservices sont aujourd'hui au cœur des applications modernes,
+              mais leur nature distribuée multiplie la surface d'attaque. En tant que future
+              développeuse, je m'intéresse aux mécanismes permettant de sécuriser chaque service
+              de manière autonome tout en garantissant la cohérence de l'ensemble —
+              c'est l'enjeu du <em>Secure by Design</em> appliqué aux systèmes distribués.
+            </p>
 
-              <!-- 3 CARDS VISUELLES -->
-              <div class="row g-3 mb-4">
+            <!-- 3 CARDS VISUELLES -->
+            <div class="row g-3 mb-4">
 
-                <div class="col-md-4">
-                  <div class="veille-aspect h-100">
-                    <div class="mb-2" style="font-size:1.6rem;">🔐</div>
-                    <h5 class="h6 mb-2">Zero Trust & moindre privilège</h5>
-                    <p style="font-size:0.88rem; color:#555; margin:0;">
-                      Ne jamais faire confiance par défaut, même en interne. Chaque utilisateur
-                      et service est authentifié en continu, et n'accède qu'aux ressources
-                      strictement nécessaires. <em>(NIST SP 800-207)</em>
-                    </p>
-                  </div>
+              <div class="col-md-4">
+                <div class="veille-aspect h-100">
+                  <div class="mb-2" style="font-size:1.6rem;">🔑</div>
+                  <h5 class="h6 mb-2">Authentification inter-services</h5>
+                  <p style="font-size:0.88rem; color:#555; margin:0;">
+                    Chaque microservice doit authentifier ses pairs. Les standards
+                    <strong>JWT</strong>, <strong>OAuth 2.0</strong> et <strong>mTLS</strong>
+                    (mutual TLS) permettent de chiffrer et valider les échanges entre services
+                    sans point de confiance centralisé. <em>(OWASP Microservices Security)</em>
+                  </p>
                 </div>
-
-                <div class="col-md-4">
-                  <div class="veille-aspect h-100">
-                    <div class="mb-2" style="font-size:1.6rem;">🤖</div>
-                    <h5 class="h6 mb-2">IA : attaque et défense</h5>
-                    <p style="font-size:0.88rem; color:#555; margin:0;">
-                      Les attaquants utilisent l'IA pour automatiser le phishing et adapter leurs
-                      stratégies en temps réel. En face, 7 entreprises sur 10 s'en servent
-                      pour détecter les anomalies réseau. <em>(CESIN, 2025)</em>
-                    </p>
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="veille-aspect h-100">
-                    <div class="mb-2" style="font-size:1.6rem;">📋</div>
-                    <h5 class="h6 mb-2">Réglementations clés</h5>
-                    <p style="font-size:0.88rem; color:#555; margin:0;">
-                      La directive <strong>NIS 2</strong> impose une gouvernance cyber renforcée
-                      aux organisations critiques. L'<strong>OWASP Top 10</strong> reste
-                      la référence incontournable pour sécuriser les applications web.
-                    </p>
-                  </div>
-                </div>
-
               </div>
 
-              <!-- SOURCES -->
-              <div class="veille-aspect">
-                <h5 class="h6 mb-3">📡 Sources de veille utilisées</h5>
-                <div class="d-flex flex-wrap gap-2">
-                  <a href="https://cyber.gouv.fr" target="_blank" class="badge text-decoration-none py-2 px-3"
-                    style="background:var(--secondary-color); font-size:0.8rem;">ANSSI</a>
-                  <a href="https://owasp.org" target="_blank" class="badge text-decoration-none py-2 px-3"
-                    style="background:var(--secondary-color); font-size:0.8rem;">OWASP</a>
-                  <a href="https://www.cybermalveillance.gouv.fr" target="_blank"
-                    class="badge text-decoration-none py-2 px-3"
-                    style="background:var(--secondary-color); font-size:0.8rem;">Cybermalveillance.gouv.fr</a>
-                  <a href="https://www.enisa.europa.eu" target="_blank" class="badge text-decoration-none py-2 px-3"
-                    style="background:var(--secondary-color); font-size:0.8rem;">ENISA</a>
-                  <a href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank"
-                    class="badge text-decoration-none py-2 px-3"
-                    style="background:var(--secondary-color); font-size:0.8rem;">Verizon DBIR</a>
-                  <span class="badge py-2 px-3" style="background:var(--secondary-color); font-size:0.8rem;">FIC · Black
-                    Hat · DEF CON</span>
+              <div class="col-md-4">
+                <div class="veille-aspect h-100">
+                  <div class="mb-2" style="font-size:1.6rem;">🕸️</div>
+                  <h5 class="h6 mb-2">Service Mesh & Zero Trust</h5>
+                  <p style="font-size:0.88rem; color:#555; margin:0;">
+                    Des outils comme <strong>Istio</strong> ou <strong>Linkerd</strong>
+                    implémentent le modèle Zero Trust au niveau réseau : chiffrement
+                    automatique du trafic, politiques d'autorisation fines et observabilité
+                    complète des flux entre services. <em>(CNCF, 2024)</em>
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="veille-aspect h-100">
+                  <div class="mb-2" style="font-size:1.6rem;">🛡️</div>
+                  <h5 class="h6 mb-2">Gestion des secrets & API Gateway</h5>
+                  <p style="font-size:0.88rem; color:#555; margin:0;">
+                    Les secrets (clés API, mots de passe, certificats) ne doivent jamais
+                    être codés en dur. Des solutions comme <strong>HashiCorp Vault</strong>
+                    ou <strong>AWS Secrets Manager</strong> centralisent leur gestion.
+                    L'<strong>API Gateway</strong> constitue le point d'entrée unique à sécuriser
+                    en priorité. <em>(NIST SP 800-204)</em>
+                  </p>
                 </div>
               </div>
 
             </div>
 
-            <!-- FLUX RSS -->
-            <div class="mt-4">
-              <h4 class="mb-3" style="color:var(--secondary-color);">
-                <i class="bi bi-rss-fill"></i> Actualités cybersécurité — CERT-FR
-              </h4>
-              <div id="rss-feed">
-                <div class="text-center py-4 text-muted">
-                  <div class="spinner-border spinner-border-sm me-2" role="status"></div>
-                  Chargement des articles en cours…
-                </div>
+            <!-- SOURCES -->
+            <div class="veille-aspect">
+              <h5 class="h6 mb-3">📡 Sources de veille utilisées</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="https://owasp.org/www-project-microservices-security/" target="_blank"
+                  class="badge text-decoration-none py-2 px-3"
+                  style="background:var(--secondary-color); font-size:0.8rem;">OWASP Microservices</a>
+                <a href="https://www.cncf.io" target="_blank" class="badge text-decoration-none py-2 px-3"
+                  style="background:var(--secondary-color); font-size:0.8rem;">CNCF</a>
+                <a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-204.pdf" target="_blank"
+                  class="badge text-decoration-none py-2 px-3"
+                  style="background:var(--secondary-color); font-size:0.8rem;">NIST SP 800-204</a>
+                <a href="https://www.redhat.com/en/topics/microservices/microservices-security" target="_blank"
+                  class="badge text-decoration-none py-2 px-3"
+                  style="background:var(--secondary-color); font-size:0.8rem;">Red Hat</a>
+                <a href="https://istio.io/latest/docs/concepts/security/" target="_blank"
+                  class="badge text-decoration-none py-2 px-3"
+                  style="background:var(--secondary-color); font-size:0.8rem;">Istio Security</a>
+                <span class="badge py-2 px-3"
+                  style="background:var(--secondary-color); font-size:0.8rem;">KubeCon · DockerCon · DevSecOps Days</span>
               </div>
             </div>
 
           </div>
+
+          <!-- FLUX ARTICLES -->
+          <div class="mt-4">
+            <h4 class="mb-3" style="color:var(--secondary-color);">
+              <i class="bi bi-rss-fill"></i> Actualités — Sécurité Microservices
+            </h4>
+            <div id="rss-feed">
+              <div class="text-center py-4 text-muted">
+                <div class="spinner-border spinner-border-sm me-2" role="status"></div>
+                Chargement des articles en cours…
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<script>
+  // Articles curatés sur la sécurité des microservices
+  const articles = [
+    {
+      title: "OWASP Top 10 for Microservices",
+      summary: "Les dix vulnérabilités les plus critiques spécifiques aux architectures microservices, avec des recommandations concrètes pour les développeurs.",
+      url: "https://owasp.org/www-project-microservices-security/",
+      source: "OWASP",
+      date: "2024",
+      image: "https://owasp.org/assets/images/logo.png"
+    },
+    {
+      title: "Sécuriser les microservices avec Istio et mTLS",
+      summary: "Comment le service mesh Istio implémente le chiffrement mutuel TLS entre services Kubernetes pour garantir un canal de confiance zero-trust.",
+      url: "https://istio.io/latest/docs/concepts/security/",
+      source: "Istio",
+      date: "2024",
+      image: "https://istio.io/latest/img/istio-whitelogo-bluebackground-framed.svg"
+    },
+    {
+      title: "NIST SP 800-204 : Security Strategies for Microservices",
+      summary: "Le guide de référence du NIST dédié aux stratégies de sécurité pour les applications basées sur des microservices en environnement cloud.",
+      url: "https://csrc.nist.gov/publications/detail/sp/800-204/final",
+      source: "NIST",
+      date: "2024",
+      image: "https://www.nist.gov/sites/default/files/images/2019/02/26/nist-logo-brand-refresh.png"
+    },
+    {
+      title: "JWT et OAuth 2.0 dans les architectures distribuées",
+      summary: "Analyse des patterns d'authentification inter-services les plus adoptés en production : token validation, refresh strategies et révocation.",
+      url: "https://auth0.com/blog/microservices-authentication-authorization/",
+      source: "Auth0",
+      date: "2024",
+      image: "https://cdn.auth0.com/website/bob-mf/auth0-shield.png"
+    },
+    {
+      title: "HashiCorp Vault : gestion centralisée des secrets",
+      summary: "Retour d'expérience sur l'intégration de Vault dans un pipeline CI/CD pour éliminer les secrets codés en dur et automatiser leur rotation.",
+      url: "https://developer.hashicorp.com/vault/docs/what-is-vault",
+      source: "HashiCorp",
+      date: "2024",
+      image: "https://www.vectorlogo.zone/logos/hashicorp/hashicorp-icon.svg"
+    },
+    {
+      title: "API Gateway Security Best Practices",
+      summary: "Les bonnes pratiques pour sécuriser la porte d'entrée de vos microservices : rate limiting, validation des entrées, WAF intégré et journalisation.",
+      url: "https://www.redhat.com/en/topics/microservices/microservices-security",
+      source: "Red Hat",
+      date: "2024",
+      image: "https://www.redhat.com/cms/managed-files/Logo-RedHat-Hat-Color-CMYK%20%281%29.svg"
+    }
+  ];
+
+  function renderArticles() {
+    const container = document.getElementById('rss-feed');
+    container.innerHTML = `
+      <div class="row g-3">
+        ${articles.map(article => `
+          <div class="col-md-6 col-lg-4">
+            <a href="${article.url}" target="_blank" class="text-decoration-none">
+              <div class="veille-aspect h-100" style="padding:0; overflow:hidden; transition: transform 0.2s;">
+                <div style="
+                  height: 140px;
+                  background: #f0f4f8;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  overflow: hidden;
+                  border-bottom: 1px solid #e0e0e0;
+                ">
+                  <img
+                    src="${article.image}"
+                    alt="${article.source}"
+                    style="max-height: 100%; max-width: 100%; object-fit: contain; padding: 1rem;"
+                    onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=\'font-size:2.5rem;\'>🔐</span>'"
+                  />
+                </div>
+                <div style="padding: 1rem;">
+                  <span class="badge mb-2" style="background:var(--secondary-color); font-size:0.72rem;">
+                    ${article.source} · ${article.date}
+                  </span>
+                  <h6 style="color: var(--primary-color); font-weight:600; font-size:0.9rem; margin-bottom:0.4rem;">
+                    ${article.title}
+                  </h6>
+                  <p style="font-size:0.82rem; color:#555; margin:0;">
+                    ${article.summary}
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  // Simulation d'un léger délai de chargement pour l'effet visuel
+  setTimeout(renderArticles, 600);
+</script>
 
   <!-- SECTION CONTACT ET MAP -->
   <section id="contact" class="section-padding">
