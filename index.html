@@ -433,6 +433,7 @@
               <span class="badge bg-light text-dark border">WordPress</span>
               <span class="badge bg-light text-dark border">PHP/Symphony</span>
               <span class="badge bg-light text-dark border">Test fonctionnels</span>
+
             </div>
             <button id="stageBTS2" class="btn btn-primary w-100">
               <i class="bi bi-file-earmark-text"></i> Détails
@@ -580,7 +581,7 @@
     </div>
   </section>
 
-<!-- SECTION VEILLE -->
+  <!-- SECTION VEILLE -->
   <section id="veille" class="section-padding">
     <div class="container">
       <div class="row justify-content-center">
@@ -659,22 +660,23 @@
               <div class="veille-aspect">
                 <h5 class="h6 mb-3">📡 Sources de veille utilisées</h5>
                 <div class="d-flex flex-wrap gap-2">
-                  <a href="https://owasp.org/www-project-microservices-security/" target="_blank"
+                  <a href="https://owasp.org/API-Security/editions/2023/en/0x11-t10/" target="_blank"
                     class="badge text-decoration-none py-2 px-3"
-                    style="background:var(--secondary-color); font-size:0.8rem;">OWASP Microservices</a>
-                  <a href="https://www.cncf.io" target="_blank" class="badge text-decoration-none py-2 px-3"
-                    style="background:var(--secondary-color); font-size:0.8rem;">CNCF</a>
-                  <a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-204.pdf" target="_blank"
+                    style="background:var(--secondary-color); font-size:0.8rem;">OWASP API Security</a>
+                  <a href="https://www.cert.ssi.gouv.fr/cti/CERTFR-2025-CTI-003/" target="_blank"
                     class="badge text-decoration-none py-2 px-3"
-                    style="background:var(--secondary-color); font-size:0.8rem;">NIST SP 800-204</a>
-                  <a href="https://www.redhat.com/en/topics/microservices/microservices-security" target="_blank"
+                    style="background:var(--secondary-color); font-size:0.8rem;">ANSSI</a>
+                  <a href="https://www.cert.ssi.gouv.fr/alerte/" target="_blank"
                     class="badge text-decoration-none py-2 px-3"
-                    style="background:var(--secondary-color); font-size:0.8rem;">Red Hat</a>
-                  <a href="https://istio.io/latest/docs/concepts/security/" target="_blank"
+                    style="background:var(--secondary-color); font-size:0.8rem;">CERT-FR</a>
+                  <a href="https://www.redhat.com/fr/topics/microservices/microservices-security" target="_blank"
                     class="badge text-decoration-none py-2 px-3"
-                    style="background:var(--secondary-color); font-size:0.8rem;">Istio Security</a>
-                  <span class="badge py-2 px-3" style="background:var(--secondary-color); font-size:0.8rem;">KubeCon ·
-                    DockerCon · DevSecOps Days</span>
+                    style="background:var(--secondary-color); font-size:0.8rem;">Red Hat FR</a>
+                  <a href="https://oauth.net/2/" target="_blank" class="badge text-decoration-none py-2 px-3"
+                    style="background:var(--secondary-color); font-size:0.8rem;">OAuth 2.0</a>
+                  <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques" target="_blank"
+                    class="badge text-decoration-none py-2 px-3"
+                    style="background:var(--secondary-color); font-size:0.8rem;">Cybermalveillance.gouv.fr</a>
                 </div>
               </div>
 
@@ -704,55 +706,54 @@
     // Articles curatés sur la sécurité des microservices
     const articles = [
       {
-        title: "OWASP Top 10 for Microservices",
-        summary: "Les dix vulnérabilités les plus critiques spécifiques aux architectures microservices, avec des recommandations concrètes pour les développeurs.",
-        url: "https://owasp.org/www-project-microservices-security/",
+        title: "OWASP API Security Top 10 — 2023",
+        summary: "La référence mondiale des vulnérabilités API les plus critiques, mise à jour en 2023. Incontournable pour tout développeur travaillant avec des microservices exposant des APIs.",
+        url: "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
         source: "OWASP",
-        date: "2024",
+        date: "2023",
         image: "https://owasp.org/assets/images/logo.png"
       },
       {
-        title: "Sécuriser les microservices avec Istio et mTLS",
-        summary: "Comment le service mesh Istio implémente le chiffrement mutuel TLS entre services Kubernetes pour garantir un canal de confiance zero-trust.",
-        url: "https://istio.io/latest/docs/concepts/security/",
-        source: "Istio",
-        date: "2024",
-        image: "https://istio.io/latest/img/istio-whitelogo-bluebackground-framed.svg"
+        title: "ANSSI — Panorama de la cybermenace 2024",
+        summary: "Rapport annuel de l'Agence Nationale de la Sécurité des Systèmes d'Information sur les grandes tendances des cybermenaces en France, incluant les risques pesant sur les architectures applicatives modernes.",
+        url: "https://www.cert.ssi.gouv.fr/cti/CERTFR-2025-CTI-003/",
+        source: "ANSSI",
+        date: "2025",
+        image: "https://www.google.com/s2/favicons?domain=ssi.gouv.fr&sz=128"
       },
       {
-        title: "NIST SP 800-204 : Security Strategies for Microservices",
-        summary: "Le guide de référence du NIST dédié aux stratégies de sécurité pour les applications basées sur des microservices en environnement cloud.",
-        url: "https://csrc.nist.gov/publications/detail/sp/800-204/final",
-        source: "NIST",
+        title: "CERT-FR — Alertes et avis de sécurité",
+        summary: "Centre gouvernemental français de veille et de réponse aux incidents informatiques. Publie en continu les vulnérabilités critiques affectant les systèmes, APIs et applications distribuées.",
+        url: "https://www.cert.ssi.gouv.fr/alerte/",
+        source: "CERT-FR",
         date: "2024",
-        image: "https://www.nist.gov/sites/default/files/images/2019/02/26/nist-logo-brand-refresh.png"
+        image: "https://www.google.com/s2/favicons?domain=cert.ssi.gouv.fr&sz=128"
       },
       {
-        title: "JWT et OAuth 2.0 dans les architectures distribuées",
-        summary: "Analyse des patterns d'authentification inter-services les plus adoptés en production : token validation, refresh strategies et révocation.",
-        url: "https://auth0.com/blog/microservices-authentication-authorization/",
-        source: "Auth0",
+        title: "Red Hat — Sécurité des microservices",
+        summary: "Article de référence disponible en français expliquant les principaux risques des architectures microservices et les solutions concrètes : Zero Trust, service mesh, gestion des secrets.",
+        url: "https://www.redhat.com/fr/topics/microservices/microservices-security",
+        source: "Red Hat FR",
         date: "2024",
-        image: "https://cdn.auth0.com/website/bob-mf/auth0-shield.png"
+        image: "https://www.google.com/s2/favicons?domain=redhat.com&sz=128"
       },
       {
-        title: "HashiCorp Vault : gestion centralisée des secrets",
-        summary: "Retour d'expérience sur l'intégration de Vault dans un pipeline CI/CD pour éliminer les secrets codés en dur et automatiser leur rotation.",
-        url: "https://developer.hashicorp.com/vault/docs/what-is-vault",
-        source: "HashiCorp",
+        title: "Authentification avec OAuth 2.0 et OpenID Connect",
+        summary: "Guide complet de la fondation OAuth sur les protocoles d'authentification et d'autorisation utilisés pour sécuriser les échanges entre microservices.",
+        url: "https://oauth.net/2/",
+        source: "OAuth.net",
         date: "2024",
-        image: "https://www.vectorlogo.zone/logos/hashicorp/hashicorp-icon.svg"
+        image: "https://oauth.net/images/oauth-logo-square.png"
       },
       {
-        title: "API Gateway Security Best Practices",
-        summary: "Les bonnes pratiques pour sécuriser la porte d'entrée de vos microservices : rate limiting, validation des entrées, WAF intégré et journalisation.",
-        url: "https://www.redhat.com/en/topics/microservices/microservices-security",
-        source: "Red Hat",
+        title: "Cybermalveillance.gouv.fr — Bonnes pratiques de sécurité",
+        summary: "Plateforme nationale d'assistance aux victimes de cybermalveillance. Présente les principales menaces et les bonnes pratiques pour sécuriser les systèmes d'information.",
+        url: "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques",
+        source: "Cybermalveillance.gouv.fr",
         date: "2024",
-        image: "https://www.redhat.com/cms/managed-files/Logo-RedHat-Hat-Color-CMYK%20%281%29.svg"
-      }
+        image: "https://www.google.com/s2/favicons?domain=cybermalveillance.gouv.fr&sz=128"
+      },
     ];
-
     function renderArticles() {
       const container = document.getElementById('rss-feed');
       container.innerHTML = `
@@ -781,7 +782,7 @@
                   <span class="badge mb-2" style="background:var(--secondary-color); font-size:0.72rem;">
                     ${article.source} · ${article.date}
                   </span>
-                  <h6 style="color: var(--primary-color); font-weight:600; font-size:0.9rem; margin-bottom:0.4rem;">
+                  <h6 style="color: var(--dark-color); font-weight:600; font-size:0.9rem; margin-bottom:0.4rem;">
                     ${article.title}
                   </h6>
                   <p style="font-size:0.82rem; color:#555; margin:0;">

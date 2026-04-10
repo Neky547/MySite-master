@@ -382,6 +382,9 @@ img[alt="CV"]:hover {
 .stage-body i {
     color: var(--secondary-color);
 }
+.stage-body span {
+    background-color: #764ba2;
+}
 
 /* TIMELINE */
 .timeline {
